@@ -10,23 +10,31 @@
 <body>
     <div id="game">
         <div id="stats">
-            <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
-            <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
-            <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+            <span class="stat xp"><b>XP: </b><span id="xpText"><b>0</b></span></span>
+            <span class="stat health "><b>Health:</b> <span id="healthText"><b>100</b></span></span>
+            <span class="stat gold"><b>Gold: </b><span id="goldText"><b>50</b></span></span>
         </div>
         <div id="controls">
-            <button id="button1">Go to store</button>
-            <button id="button2">Go to cave</button>
-            <button id="button3">Fight dragon</button>
+            <button class="game-button" id="button1">Go to store</button>
+            <button class="game-button" id="button2">Go to cave</button>
+            <button class="game-button" id="button3">Fight dragon</button>
         </div>
         <div id="monsterStats">
-            <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
-            <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+            <span class="monster-stat">Monster Name: <strong><span class="monster"
+                        id="monsterName"></span></strong></span>
+            <span class="monster-stat">Health: <strong><span id="monsterHealth"></span></strong></span>
         </div>
         <div id="text">
-            Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You
+            <strong> Welcome to Dragon Repeller!</strong> <br>You must defeat the dragon that is preventing
+            people
+            from leaving the town. You
             are in the town square. Where do you want to go? Use the buttons above.
         </div>
+    </div>
+
+    <!-- next -->
+    <div>
+        <span><i>C</i></span>
     </div>
     <script src="./script.js"></script>
 </body>

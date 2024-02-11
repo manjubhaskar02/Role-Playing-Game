@@ -67,7 +67,7 @@ body {
     width: 200px;
     height: 50px;
     align-items: center;
-    padding: 15px 16px 5px;
+    padding: 15px 16px 15px;
     border-radius: 10px;
     align-self: center;
     /* line-height: 26px; */
@@ -187,7 +187,7 @@ body {
 
 .game-button:hover {
     top: 2px;
-    box-shadow: 0 4px 0 #912628, 0 6px 1px 1px rgba(0, 0, 0, .3), 0 8px 0 5px #7d1212, 0 10px 0 5px #9a1a1a, 0 13px 0 5px #5e0c0c, 0 13px 1px 6px rgba(0, 0, 0, .3);
+    box-shadow: 0 4px 0 #266d91, 0 6px 1px 1px rgba(0, 0, 0, .3), 0 8px 0 5px #124d7d, 0 10px 0 5px #1a549a, 0 13px 0 5px #0c435e, 0 13px 1px 6px rgba(0, 0, 0, .3);
 }
 
 
@@ -199,28 +199,32 @@ body {
 
 /* @media screen and (max-width: 500px) and (min-width: 300px) { */
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:800px) {
     #game {
-        max-width: 350px;
-        height: 600px;
-        padding: 20px 5px 60px;
+        max-width: 600px;
+        height: 650px;
+        padding: 20px 20px 60px;
         border-radius: 20px;
     }
 
     .stat {
         height: 75px;
-        font-size: 1rem;
-        padding: 0px 16px 0px;
+        font-size: 1.5rem;
+        padding: 15px 5px 0px;
+        line-height: 40px;
 
     }
 
+
     #controls {
         flex-direction: column;
-        padding: 20px 10px;
+        padding: 40px 10px;
     }
 
     #stats {
         padding: 40px 5px 0px;
+        display: flex;
+        gap: 10px;
     }
 
     #monsterStats {
@@ -231,16 +235,58 @@ body {
 
     .game-button {
         padding: 20px 60px 20px;
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding: 8px 15px 10px;
     }
 
     #text {
-        font-size: 1em;
+        font-size: 1.5em;
     }
 
     .monster-stat {
         font-size: 1em;
 
     }
+}
+
+@media screen and (max-width:500px) {
+
+    #game {
+        max-width: 350px;
+        height: 600px;
+        padding: 20px 5px 60px;
+        border-radius: 20px;
+    }
+
+    .xp,
+    .gold {
+        line-height: 45px;
+    }
+
+    .stat {
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    #text {
+        font-size: 1em;
+    }
+
+    #stats {
+        width: 330px;
+        padding: 40px 5px 0px;
+    }
+
+    .game-button {
+        padding: 20px 60px 20px;
+        font-size: 1rem;
+        padding: 8px 15px 10px;
+    }
+
+    #controls {
+        padding: 20px 10px;
+    }
+
+
+
 }

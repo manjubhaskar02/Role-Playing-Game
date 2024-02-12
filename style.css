@@ -24,7 +24,7 @@ body {
 
 #game {
     width: 800px;
-    height: 540px;
+    height: auto;
     background-color: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     margin: 30px auto 0px;
@@ -202,7 +202,7 @@ body {
 @media screen and (max-width:800px) {
     #game {
         max-width: 600px;
-        height: 650px;
+        /* height: 650px; */
         padding: 20px 20px 60px;
         border-radius: 20px;
     }

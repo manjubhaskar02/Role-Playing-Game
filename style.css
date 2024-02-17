@@ -31,11 +31,16 @@ body {
     padding: 20px 40px 60px;
     border-radius: 50px;
     text-align: center;
-    backdrop-filter: blur(25px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(6px);
+    /* border: 1px solid rgba(255, 255, 255, 0.5);
     border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     border-left: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1); */
+    border: 1px solid #e39b10ba;
+    border-bottom: 1px solid rgb(255 255 255 / 25%);
+    border-left: 1px solid #de8d11;
+    box-shadow: 0 25px 50px rgb(209 12 12 / 59%);
+
 }
 
 #controls,
@@ -72,7 +77,7 @@ body {
     align-self: center;
     /* line-height: 26px; */
     border: none;
-    background: linear-gradient(90deg, #e31010, #900e0e);
+    background: linear-gradient(90deg, #e34110, #903c0e);
     box-shadow: inset -8px 0 8px rgb(170 136 126 / 15%), inset 0 -8px 8px rgb(235 41 35 / 25%), 0 0 2px rgb(168 32 32 / 91%), 10px 20px 25px rgb(229 28 28 / 70%);
     overflow: hidden;
 }
@@ -84,12 +89,12 @@ body {
     left: 4px;
     bottom: 14px;
     right: 12px;
-    background: linear-gradient(90deg, #de2811, #9d3609);
+    background: linear-gradient(90deg, #de5511, #9d3f09);
     border-radius: 10px;
     box-shadow: -10px 10px 10px rgba(115, 56, 31, 0.25), 10px 5px 10px rgba(219, 38, 14, 0.15);
-    border-left: 1px solid #ac3604;
-    border-bottom: 1px solid #ac3604;
-    border-top: 2px solid #c13f07;
+    border-left: 1px solid #ed4b06;
+    border-bottom: 1px solid #ac4a04;
+    border-top: 2px solid #c14e07;
 
 }
 

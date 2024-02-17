@@ -1,11 +1,3 @@
-let xp = 0;
-let health = 100;
-let gold = 50;
-let currentWeapon = 0;
-let fighting;
-let monsterHealth;
-let inventory = ["stick"];
-
 const button1 = document.querySelector('#button1');
 const button2 = document.querySelector("#button2");
 const button3 = document.querySelector("#button3");
@@ -17,6 +9,18 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 const healthcolor = document.querySelector(".health");
+const xpcolor = document.querySelector(".xp");
+
+let xp = 0;
+xpcolor.classList.remove("xp");
+let health = 100;
+let gold = 50;
+let currentWeapon = 0;
+let fighting;
+let monsterHealth;
+let inventory = ["stick"];
+
+
 
 
 const weapons = [
@@ -202,6 +206,7 @@ function attack() {
     healthText.innerHTML = `<b>${health}</b>`;
 
     monsterHealthText.innerText = monsterHealth;
+
     if (health <= 0) {
         healthcolor.classList.remove("health");
         lose();
@@ -222,6 +227,7 @@ function getMonsterAttackValue(level) {
     const hit = (level * 5) - (Math.floor(Math.random() * xp));
     console.log(hit);
     return hit > 0 ? hit : 0;
+
 }
 
 function isMonsterHit() {
@@ -235,9 +241,15 @@ function dodge() {
 function defeatMonster() {
     gold += Math.floor(monsters[fighting].level * 6.7);
     xp += monsters[fighting].level;
+    if (xp > 0) {
+        xpcolor.classList.add("xp");
+    }
+
     goldText.innerHTML = `<b>${gold}</b>`;
     xpText.innerHTML = `<b>${xp}</b>`;
+
     update(locations[4]);
+
 }
 
 function lose() {
@@ -259,6 +271,8 @@ function restart() {
     healthText.innerHTML = `<b>${health}</b>`;
     xpText.innerHTML = `<b>${xp}</b>`;
     healthcolor.classList.add("health");
+    xpcolor.classList.remove("xp");
+
     goTown();
 }
 
